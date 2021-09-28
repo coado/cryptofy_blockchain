@@ -1,0 +1,48 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+
+@import 'components/button.scss';
+@import 'components/table.scss';
+@import 'components/enterCoinsForm.scss';
+@import 'components/enterCoinsEdit.scss';
+@import 'components/label.scss';
+@import 'components/spinner';
+@import 'components/close.scss';
+@import 'components/header';
+@import 'components/lineChart';
+@import 'components/polarChart';
+@import 'components/alertWindow.scss';
+@import 'components/cashProfitsForm';
+@import 'components/version';
+@import 'components/walletTrackerTransactionForm';
+@import 'components/walletTrackerFuturesForm';
+
+@import 'pages/EnterCoinsPage';
+@import 'pages/ErrorPage';
+@import 'pages/NotFoundPage';
+@import 'pages/ConnectorPage';
+@import 'pages/SignInAndSignUp';
+@import 'pages/Dashboard';
+@import 'pages/HomePage';
+@import 'pages/WalletTrackerPage';
+
+.suspense {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: $space-background;
+
+  &__dark {
+    background: $dark-background;
+  }
+
+  &__matrix {
+    background: $matrix-background;
+  }
+
+  &__light {
+    background: $light-background;
+  }
+}

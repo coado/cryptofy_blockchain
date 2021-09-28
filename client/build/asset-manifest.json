@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/static/js/main.8a25f64f.chunk.js",
+    "main.js.map": "/static/js/main.8a25f64f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.efc339f7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.efc339f7.js.map",
+    "static/js/2.33fd6b79.chunk.js": "/static/js/2.33fd6b79.chunk.js",
+    "static/js/2.33fd6b79.chunk.js.map": "/static/js/2.33fd6b79.chunk.js.map",
+    "static/js/3.ae359196.chunk.js": "/static/js/3.ae359196.chunk.js",
+    "static/js/3.ae359196.chunk.js.map": "/static/js/3.ae359196.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.33fd6b79.chunk.js.LICENSE.txt": "/static/js/2.33fd6b79.chunk.js.LICENSE.txt",
+    "static/media/001.dccb2f6b.svg": "/static/media/001.dccb2f6b.svg",
+    "static/media/002.091026b3.svg": "/static/media/002.091026b3.svg",
+    "static/media/003.a6ec7b9f.svg": "/static/media/003.a6ec7b9f.svg",
+    "static/media/004.8975ba34.svg": "/static/media/004.8975ba34.svg",
+    "static/media/close-outline.a22b61b1.svg": "/static/media/close-outline.a22b61b1.svg",
+    "static/media/eclipse.83530a93.svg": "/static/media/eclipse.83530a93.svg",
+    "static/media/iconmonstr-banknote-15.11f59d48.svg": "/static/media/iconmonstr-banknote-15.11f59d48.svg",
+    "static/media/iconmonstr-chart-6.dfec2bde.svg": "/static/media/iconmonstr-chart-6.dfec2bde.svg",
+    "static/media/iconmonstr-chart-9.3f9283ee.svg": "/static/media/iconmonstr-chart-9.3f9283ee.svg",
+    "static/media/matrix.a8cbd08f.svg": "/static/media/matrix.a8cbd08f.svg",
+    "static/media/moon.325cef31.svg": "/static/media/moon.325cef31.svg",
+    "static/media/rocket-outline.0940735b.svg": "/static/media/rocket-outline.0940735b.svg",
+    "static/media/saturn.a20761a5.svg": "/static/media/saturn.a20761a5.svg",
+    "static/media/sun.03c0b99f.svg": "/static/media/sun.03c0b99f.svg",
+    "static/media/wallet-outline.e6b8b469.svg": "/static/media/wallet-outline.e6b8b469.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.efc339f7.js",
+    "static/js/2.33fd6b79.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.8a25f64f.chunk.js"
+  ]
+}

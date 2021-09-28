@@ -1,0 +1,119 @@
+
+.enterCoinsForm {
+    @include blurEffect;
+
+    &__container {
+    width: 33%;
+    height: 75vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba($color-light, .3);
+    border-radius: 1rem;
+    box-shadow: $shadow;
+    position: relative;
+
+}
+
+
+    label {
+        color: $color-white;
+        font-family: $font;
+    }
+
+    input {
+        transition: all .2s;
+
+        
+    }
+
+    &__paragraph {
+        color: $color-white;
+        width: 80%;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1rem;
+        transition: all .3s;
+    }
+
+    &__form {
+        @include form;
+    }
+
+    &__text {
+        margin-top: 1rem;
+        text-transform: uppercase;
+        font-size: 3rem;
+        display: inline-block;
+        // background-image: $background--1;
+        // -webkit-background-clip: text;
+        color: $color-white;
+        letter-spacing: .2rem;
+    }
+
+    &__type {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    &__buysell {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    &__buy {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 1rem;
+    }
+
+    &__sell {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 1rem;
+    }   
+
+    &__input {
+        @include inputStyles;
+        border-bottom: 3px solid transparent;
+        
+    }
+
+    &__comment {
+        @include inputStyles;
+        width: 86%;
+        
+        &--container {
+            margin-top: 2rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &--label {
+            align-self: flex-start;
+            margin-left: 3.6rem;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__date {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3.5rem;
+        
+    }
+
+}

@@ -1,0 +1,448 @@
+
+
+.walletTracker {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-space {
+        background-image: $space-background;
+        color: $color-white;
+    }
+
+    &-dark {
+        background-image: $dark-background;
+        color: $color-white;
+    }
+
+    &-matrix {
+        background-color: $matrix-background;
+        color: $color-green;
+    }
+
+    &-light {
+        background-color: $light-background;
+        color: $color-purple;
+    }
+
+    &__table {
+
+        &--header {
+            color: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &--percentageCourse {
+            font-size: .7rem;
+            position: absolute;
+            transform: translate(15%, -100%);
+        }
+
+        &--text {
+ 
+        }
+
+        &--buttons {
+
+        }
+
+
+        &--table {
+
+            th {
+                
+                &:first-of-type {
+                    width: 5rem;
+                    
+            }
+        }
+            td{
+                font-size: 1rem;
+                text-transform: uppercase;
+
+                &:first-of-type {
+                    width: 5rem;
+                    position: relative;
+                }
+
+                &:last-of-type {
+                    // display: flex;
+                  //  align-items: center;
+                    // justify-content: center;
+                }
+        }
+    }
+            &--rocketIcon {
+                width: 1.5rem;
+                height: 1.5rem;
+            }  
+
+            &--rocketContainer {
+                display: flex;
+                justify-content: center;
+            }
+    }
+
+
+    &__transactionsAndFutures {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 98%;
+        margin-top: 10rem;
+
+    }
+
+    &__futures {
+        width: 49%;
+        border-radius: 1rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    &__transactions {
+        width: 49%;
+        border-radius: 1rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+
+    
+    &__cards {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+
+        &--card {
+            
+            border-radius: .5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            box-shadow: $shadow;
+            overflow: hidden;
+            margin-top: 5rem;
+            width: 23%;
+            height: 100%;
+        
+            transition: all .2s;
+
+
+            &:hover {
+                transform: translateY(-.5rem);
+                
+            }
+
+           
+           
+
+           
+
+            h2 {
+               // margin-bottom: 4.5rem;
+                font-size: 4.5rem;
+                color: inherit;
+                margin-top: 7rem ;
+            }
+
+        }
+
+        &--header {
+                content: '';
+                display: flex;
+                background-image: linear-gradient(to right top, #32ff7e, #4cff8b, #60ff98, #71ffa4, #81ffaf);
+                border-radius: 4rem;
+                position: absolute;
+                top: -5rem;
+                width: 100%;
+                height: 10rem;
+                opacity: .9;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                box-shadow: $shadow;
+
+
+                h1 {
+                    color: $color-white;
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    letter-spacing: .3rem;
+                    margin-bottom: .5rem;
+                   
+                }
+
+                p {
+                    color: $color-white;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    letter-spacing: .3rem;
+                    margin-bottom: .3rem;
+                    font-weight: 500;
+                }
+        }
+
+        &--container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 15rem;
+            width: 100%;
+            
+        }
+
+        
+
+        &--data {
+            color: inherit;
+            text-align: center;
+            font-size: 1.3rem;
+            font-family: $font;
+            margin-bottom: .5rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: .05rem;
+            margin-left: 1rem;
+            z-index: 2;
+            
+        }
+
+        
+        span {
+
+            color: #f0932b;
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 1.7rem;
+            z-index: 2;
+        }
+
+        
+    }
+
+    &__statsAndCharts {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10rem;
+        margin-top: 5rem;
+    }
+
+    &__stats {
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1rem;
+        // border: 1px solid $color-white;
+      
+
+        &--header {
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 600;
+            color: inherit;
+            text-align: center;
+            letter-spacing: .8rem;
+            margin-bottom: 3rem;
+        }
+
+        &--title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &--table {  
+
+            font-size: 1.5rem;
+            color: inherit;
+            text-align: center;
+
+            th {
+                padding: 2rem;
+                font-size: 2rem;
+                letter-spacing: .3rem;
+            }
+
+            td{ 
+                padding: 1rem;
+            }
+        }
+
+        &--card {
+            height: 28rem;
+            width: 100%;
+            box-shadow: $shadow;
+            margin-top: 6rem;
+            border-radius: 2rem;
+            position: relative;
+
+        }
+
+        &--cardContainer {
+
+            width: 100%;
+            height: 100%;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+            
+            &-matrix {
+                background: transparent;
+            }
+
+            &-space {
+                background-image: linear-gradient(to right top, #32ff7e, #4cff8b, #60ff98, #71ffa4, #81ffaf);
+                -webkit-clip-path: polygon(0 0, 50% 0, 40% 100%, 0 100%);
+                clip-path: polygon(0 0, 50% 0, 40% 100%, 0 100%);
+            }
+
+            &-dark {
+                background-image: linear-gradient(to right top, #32ff7e, #4cff8b, #60ff98, #71ffa4, #81ffaf);
+                -webkit-clip-path: polygon(0 0, 50% 0, 40% 100%, 0 100%);
+                clip-path: polygon(0 0, 50% 0, 40% 100%, 0 100%);
+            }
+
+
+            p {
+               font-size: 1.5rem;
+               color: inherit;
+               font-weight: 700;
+               margin-left: 2rem;
+               margin-bottom: 2rem;
+
+            }
+        }
+
+        &--cardRocket{
+            position: absolute;
+            width: 12rem;
+            height: 12rem;
+            fill: inherit;
+            bottom: 6rem;
+            right: 15rem;
+            color: inherit;
+        }
+
+        &--cardMoon {
+            position: absolute;
+            width: 7rem;
+            height: 7rem;
+            top: 3rem;
+            right: 3rem;
+
+            &-matrix {
+                fill: $color-green;
+            }
+
+            &-dark {
+                fill: $color-white
+            }
+
+            &-space {
+                fill: $color-white;
+            }
+
+            &-light {
+                fill: $color-purple;
+            }
+        }
+        
+    }
+
+
+    &__charts {
+        width: 43%;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // margin-bottom: 12rem;
+
+        &--header {
+            font-size: 2rem;
+            color: inherit;
+            letter-spacing: .5rem;
+            text-transform: uppercase;
+            margin-bottom: .5rem;
+        }
+
+        &--box {
+            display: flex;
+            align-items: center;
+        }
+  
+
+        &--transactions {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &--futures {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 3rem;
+        }
+
+        &--alternativeText {
+            color: inherit;
+           // margin-top: 8rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        &--container {
+        margin-right: 2rem;
+        margin-top: 2rem;
+        width: 35rem;
+        height: 38rem;
+        box-shadow: $shadow;
+        padding: 3rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-1rem);
+        }
+        
+
+            h1 {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                color: inherit;
+            }
+        }
+    }
+
+
+    
+} 

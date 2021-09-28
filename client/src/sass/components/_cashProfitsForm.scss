@@ -1,0 +1,52 @@
+
+.cashProfitsForm {
+    @include blurEffect;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &__container {
+        width: 28%;
+        height: 60%;
+        position: fixed;
+        background-color: rgba($color-light, .3);
+        border-radius: 1rem;
+        box-shadow: $shadow;
+        z-index: 4000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__header {
+        color: $color-white;
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
+    }
+
+    &__inputBox {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+
+        input {
+            @include inputStyles;
+        }
+        label {
+            color: $color-white;
+        }
+    }
+
+    &__inputDate {
+        width: 40%;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

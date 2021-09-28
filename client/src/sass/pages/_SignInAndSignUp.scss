@@ -1,0 +1,118 @@
+
+.sign {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    //background-color: red;
+    background-image: $space-background;
+
+    &__spinnerWrapper {
+        position: absolute;
+        top: -5rem;
+    }
+
+    &__container {
+        width: 40rem;
+        height: 50rem;
+        margin: 0 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba($color-light, .3);
+        border-radius: 1rem;
+        box-shadow: $shadow;
+    }
+
+    &__form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    &__header {
+        font-size: 3.5rem;
+        color: $color-white;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        margin-top: 3rem;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 90%;
+
+        &:first-of-type {
+            margin-top: 4rem;
+        }
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 85%;
+        display: block;
+        align-self: center;
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-green;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-red;
+        }
+    }
+
+    &__label {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 1rem;
+        transform: translateY(-8rem);
+        transition: all .3s;
+    }
+
+    &__forgot {
+        font-size: 1.5rem;
+        color: $color-white;
+        text-decoration: none;
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(1.1) translateY(.3rem);
+        }
+    }
+
+  
+    
+}
+
+.sign__input:placeholder-shown ~ .sign__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}
+
+
+
+.signIn {
+
+}

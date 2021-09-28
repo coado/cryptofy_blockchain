@@ -1,0 +1,114 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+
+    &-matrix {
+        color: $color-green;
+    }
+    &-dark {
+        color: $color-white;
+    }
+    &-space {
+        color: $color-white;
+    }
+    &-light {
+        color: $color-purple;
+    }
+
+
+    &__table {
+        width: 100%;
+        table-layout: fixed;
+        overflow: hidden;
+        border-collapse: collapse;
+    }
+
+    &__header {
+        width: 100%;
+        background-color: $color-table;
+
+        &-space,
+        &-dark {
+            border: 1px solid $color-table;
+        }
+        &-matrix {
+            border: 1px solid $color-green;
+        }
+        &-light {
+            border: 1px solid $color-purple;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        overflow-y: auto;
+        height: 30rem;
+        border: 1px solid $color-table;
+    }
+
+    &__checkbox {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 2rem;
+        opacity: .8;
+    }
+
+
+    th{
+        padding: 2rem 1.5rem;
+        text-align: left;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-align: center;
+        
+
+        &:first-of-type {
+            width: 5rem;
+        }
+      }
+      td{
+          &:first-of-type {
+              width: 5rem;
+          }
+
+        padding: 1.5rem;
+        text-align: left;
+        vertical-align:middle;
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-align: center;
+        border: none;
+    
+        
+      }
+      tbody {
+        tr {
+            position: relative;
+            cursor: pointer;
+            
+            transition: all .2s;
+            &:hover {
+                background-color: $color-table;
+                transform: scale(1.02);
+                
+            }
+      }
+      
+
+       
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+    } 
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    } 
+    ::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    }
+
+}

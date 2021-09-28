@@ -1,0 +1,40 @@
+
+.label {
+    width: 45rem;
+    height: 10rem;
+    font-size: 2rem;
+    display: flex;
+    color: $color-white;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: fixed;
+    top: 2rem;
+    z-index: 10000000000000000000;
+    transition: all .2s;
+    
+    &__text {
+        text-align: center;
+    }
+
+    &__error {
+        background-color:  $color-red-transparent;
+
+        &:hover {
+            box-shadow: $shadow;
+            transform: scale(1.02);
+            background-color: $color-red;
+        }
+    }
+
+    &__success {
+        background-color:  $color-green-transparent;
+
+        &:hover {
+            box-shadow: $shadow;
+            transform: scale(1.02);
+            background-color: $color-green;
+        }
+    }
+}
