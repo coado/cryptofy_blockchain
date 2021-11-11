@@ -9,8 +9,6 @@ const useGetAccess = (networkId, active, library, account, signInUser) => {
         async function getSubscriptionData() {
             const data = await contract.methods.getUserSubscriptionData().call({from: account})
             const currentTimestamp = Date.now()
-            console.log(data)
-            console.log(currentTimestamp);
             if (parseInt(data[1]) > currentTimestamp) {
                 setAccess(true)
                 signInUser({
